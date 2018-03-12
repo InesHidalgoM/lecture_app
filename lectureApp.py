@@ -4,9 +4,9 @@ from datetime import datetime
 app = Flask("My Flask App")
 
 
-#@app.route("/")
-#def default_path():
-#return render_template ("index.html") #This 
+@app.route("/")
+def default_path():
+return render_template ("index.html") #This
 
 
 @app.route("/show_lectures", methods=["POST"])
