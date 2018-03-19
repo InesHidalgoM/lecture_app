@@ -15,14 +15,10 @@ param = {
 print param["location.address"]
 
 lectures = eventbrite.event_search()
-
 one = lectures["events"][0]
-
-#print(first['description']['text'])
-
-#print(first.keys())
-
-#print(first['name'])
+print one['description']['text']
+print one.keys()
+print one['name']
 
 app = Flask("My Flask App")
 
