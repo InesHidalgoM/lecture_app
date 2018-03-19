@@ -14,8 +14,9 @@ param = {
 }
 print param["location.address"]
 
+lectures = eventbrite.event_search()
 
-#first = results["events"][0]
+one = lectures["events"][0]
 
 #print(first['description']['text'])
 
