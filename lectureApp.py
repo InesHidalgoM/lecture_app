@@ -16,7 +16,7 @@ print param["location.address"]
 
 lectures = eventbrite.event_search()
 one = lectures["events"][0]
-print one['description']['text']
+#print one['description']['text']
 #print one.keys()
 #print one['name']
 
@@ -29,7 +29,7 @@ def get_my_ip():
 
 @app.route("/")
 def default_path():
-    return render_template ("index.html") #This
+    return render_template ("index.html", name="amelie") #This
 
 
 @app.route("/show_lectures", methods=["POST"])
