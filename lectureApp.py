@@ -8,7 +8,7 @@ user = eventbrite.get_user()
 user["id"]
 user["name"]
 
-@app.route("/show_lectures", methods=["POST"])
+@app.route("/lectures", methods=["POST"])
 def read_form():
     form_data=request.form
     location = (form_data["city"])
