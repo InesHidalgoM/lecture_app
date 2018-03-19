@@ -13,13 +13,13 @@ def get_my_ip():
     return jsonify({"ip": request.remote_addr}), 200
 here = request.remote_addr
 
-response = requests.get("https://ipinfo.io/{}/json" .format(here))
-response.json()
-location = here[loc]
+#response = requests.get("https://ipinfo.io/{}/json" .format(here))
+#response.json()
+#location = here[loc]
 
 param = {
     "q":"lecture",
-    "location.address": location
+    "location.address": "Edinburgh"
 }
 
 lectures = eventbrite.event_search(**param)
