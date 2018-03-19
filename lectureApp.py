@@ -1,7 +1,5 @@
 from flask import Flask , render_template, request, jsonify
 from datetime import datetime
-from eventbrite import Eventbrite
-import requests
 
 app = Flask("My Flask App")
 
