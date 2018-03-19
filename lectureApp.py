@@ -1,13 +1,12 @@
 from eventbrite import Eventbrite
 from flask import Flask , render_template, request, jsonify
 from datetime import datetime
+import requests
 
 eventbrite = Eventbrite("5Q5HRS46AWMKIYGZGEAW")
 user = eventbrite.get_user()
-user["id"]
-user["name"]
-
-
+#user["id"]
+#user["name"]
 
 app = Flask("My Flask App")
 
