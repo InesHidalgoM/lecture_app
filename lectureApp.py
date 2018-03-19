@@ -8,6 +8,12 @@ user = eventbrite.get_user()
 user["id"]
 user["name"]
 
+param = {
+    "q" : "lecture",
+    "location.address" : "London"
+}
+print param["location.address"]
+
 app = Flask("My Flask App")
 
 @app.route("/get_my_ip", methods=["GET"])
