@@ -29,7 +29,7 @@ def get_my_ip():
 
 @app.route("/")
 def default_path():
-    return render_template ("index.html", name="amelie") #This
+    return render_template ("index.html", name=one) #This
 
 
 @app.route("/show_lectures", methods=["POST"])
