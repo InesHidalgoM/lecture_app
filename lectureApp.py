@@ -17,8 +17,8 @@ print param["location.address"]
 lectures = eventbrite.event_search()
 one = lectures["events"][0]
 print one['description']['text']
-print one.keys()
-print one['name']
+#print one.keys()
+#print one['name']
 
 app = Flask("My Flask App")
 
