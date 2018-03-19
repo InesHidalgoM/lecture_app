@@ -37,11 +37,10 @@ app = Flask("My Flask App")
 def default_path():
     return render_template ("index.html", name1=(one["name"]["text"]), content1=(one["description"]["text"]), name2=(two["name"]["text"]), content2=(two["description"]["text"]), name3=(three["name"]["text"]), content3=(three["description"]["text"]), name4=(four["name"]["text"]), content4=(four["description"]["text"]), name5=(five["name"]["text"]), content5=(five["description"]["text"]),name6=(six["name"]["text"]), content6=(six["description"]["text"])) #This
 
-
-#@app.route("/show_lectures", methods=["POST"])
-#def read_form():
-#	return render_template ("lectures.html", date=date, sign=sign, data=data)
-	#return "All OK"
+@app.route("/show_lectures", methods=["POST"])
+def read_form():
+	return render_template ("lectures.html", date=date, sign=sign, data=data)
+	return "All OK"
 
 if __name__ == '__main__':
 	app.run(debug=True)
