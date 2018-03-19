@@ -14,6 +14,15 @@ param = {
 }
 print param["location.address"]
 
+
+first = results["events"][0]
+
+#print(first['description']['text'])
+
+#print(first.keys())
+
+#print(first['name'])
+
 app = Flask("My Flask App")
 
 @app.route("/get_my_ip", methods=["GET"])
@@ -23,7 +32,7 @@ def get_my_ip():
 
 @app.route("/")
 def default_path():
-    return render_template ("index.html") #This
+    return render_template ("index.html", name="Amelie") #This
 
 
 @app.route("/show_lectures", methods=["POST"])
