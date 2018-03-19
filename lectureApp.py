@@ -11,7 +11,7 @@ user["name"]
 @app.route("/get_my_ip", methods=["GET"])
 def get_my_ip():
     return jsonify({"ip": request.remote_addr}), 200
-here = request.remote_addr
+#here = request.remote_addr
 
 #response = requests.get("https://ipinfo.io/{}/json" .format(here))
 #response.json()
