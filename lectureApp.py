@@ -12,7 +12,7 @@ param = {
     "q":"lecture",
     "location.address":"London"
 }
-print param["location.address"]
+#print param["location.address"]
 
 lectures = eventbrite.event_search()
 one = lectures["events"][9]
