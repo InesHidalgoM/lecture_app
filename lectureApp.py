@@ -9,7 +9,7 @@ user["id"]
 user["name"]
 
 param = {
-    "q" : "lecture",
+    #"q" : "lecture",
     "location.address" : "London"
 }
 print param["location.address"]
