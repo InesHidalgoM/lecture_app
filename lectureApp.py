@@ -4,6 +4,10 @@ from datetime import datetime
 
 eventbrite = Eventbrite("5Q5HRS46AWMKIYGZGEAW")
 user = eventbrite.get_user()
+user["id"]
+user["name"]
+
+
 
 app = Flask("My Flask App")
 
