@@ -8,17 +8,18 @@ user = eventbrite.get_user()
 user["id"]
 user["name"]
 
-@app.route("/lectures", methods=["POST"])
-def read_form():
-    form_data=request.form
-    location = (form_data["city"])
-    data = city
-    return render_template ("lectures.html", data=data)
-    return "All OK"
+#@app.route("/lectures", methods=["POST"])
+#def read_form():
+#form_data=request.form
+#location = (form_data["city"])
+#data = city
+#return render_template ("lectures.html", data=data)
+#return "All OK"
 
 param = {
     "q":"lecture",
-    "location.address": "{}".format(city)
+#"location.address": "{}".format(city)
+    "location.address": "London"
 }
 
 lectures = eventbrite.event_search(**param)
