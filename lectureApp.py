@@ -41,11 +41,14 @@ print param["location.address"]
 #}
 #print param["location.address"]
 
+#prints first result
 first = results["events"][0]
 
+#prints descriptions
 print(first['description']['text'])
 
-print(first.keys())
+#this was useful for us just to know which paramters to filter through, or what to print on the website
+#print(first.keys())
 
 print(first['name'])
 
