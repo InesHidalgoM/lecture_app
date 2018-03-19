@@ -14,7 +14,7 @@ param = {
 }
 #print param["location.address"]
 
-lectures = eventbrite.event_search(q="lecture", location.address="London")
+lectures = eventbrite.event_search(("location.address")**param)
 one = lectures["events"][9]
 
 app = Flask("My Flask App")
