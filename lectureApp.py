@@ -16,9 +16,6 @@ print param["location.address"]
 
 lectures = eventbrite.event_search()
 one = lectures["events"][0]
-#print one['description']['text']
-#print one.keys()
-#print one['name']
 
 app = Flask("My Flask App")
 
@@ -29,7 +26,7 @@ def get_my_ip():
 
 @app.route("/")
 def default_path():
-    return render_template ("index.html", name=one["text"]) #This
+    return render_template ("index.html", name=(one["text"])) #This
 
 
 @app.route("/show_lectures", methods=["POST"])
