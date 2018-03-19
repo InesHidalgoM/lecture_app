@@ -15,7 +15,7 @@ param = {
 print param["location.address"]
 
 
-first = results["events"][0]
+#first = results["events"][0]
 
 #print(first['description']['text'])
 
