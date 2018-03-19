@@ -26,7 +26,7 @@ def get_my_ip():
 
 @app.route("/")
 def default_path():
-    return render_template ("index.html", name=(one["text"])) #This
+    return render_template ("index.html", name=(one["description"]["text"])) #This
 
 
 @app.route("/show_lectures", methods=["POST"])
